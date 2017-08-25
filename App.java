@@ -13,7 +13,6 @@ public class App{
         
         while (play) {
 
-            
             choice = getInput();
 
             if (choice.equals("list")) {
@@ -32,7 +31,7 @@ public class App{
                 toDoCollection.archiveTasks();
             } 
             else if (choice.equals("q")) {
-              System.exit(0);
+                play = false;
             }
         }
     }
